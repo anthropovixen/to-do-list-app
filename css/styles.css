@@ -5,9 +5,13 @@ font: normal normal 13px/16px "Open Sans", sans-serif;
 background: #dfdfdf;
 }
 
+* {
+box-sizing: border-box;
+}
+
 .container{
 padding: 20px;
-width: 300px;
+width: 50%;
 margin: 0 auto;
 margin-top: 40px;
 background: white;
@@ -19,11 +23,12 @@ display: inline-block;
 
 input{
 padding: 4px 15px 4px 5px;
+width: auto;
 }
 
 #button{
 display: inline-block;
-background-color:#fc999b;
+background-color:#668E53;
 color:#ffffff;
 border-radius: 5px;
 text-align:center;
@@ -35,17 +40,30 @@ padding: 5px 15px;
 cursor: pointer;
 opacity: .8;}
 
-ol {padding-left: 20px;}
+ol {
+    padding-left: 20px;
+}
 
-ol li {padding: 5px;color:#000;}
+ol li {
+    padding: 10px;
+    color:#000;
+}
 
-ol li:nth-child(even){background: #dfdfdf;}
+ol li:nth-child(even){
+    background: #EDF3F1;
+}
 
-.strike{text-decoration: line-through;}
+.strike{
+    text-decoration: line-through;
+}
 
-li:hover{
+li:hover {
   cursor: pointer;
  }
+
+ol li:hover {
+    background: #B1BCBE;
+}
 
 .delete {
 	display: none;
