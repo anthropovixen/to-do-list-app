@@ -5,10 +5,6 @@ function newItem() {
 		' ' === $('#input').val()
 			? (alert('You must write something!'), e.preventDefault())
 			: $('#list').append(t),
-		$('#input').keydown(function (t) {
-			13 === t.which &&
-				(t.preventDefault(), $('li').append(n), (this.value = ''));
-		}),
 		t.on('dblclick', function () {
 			t.toggleClass('strike');
 		});
