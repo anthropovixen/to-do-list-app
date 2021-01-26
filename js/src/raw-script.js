@@ -10,13 +10,13 @@ function newItem() {
 		$('#list').append(li);
 	}
 
-	$('#input').keydown(function (e) {
-		if (e.which === 13) {
-			e.preventDefault();
-			$('li').append(inputValue);
-			this.value = '';
-		}
-	});
+	// $('#input').keydown(function (e) {
+	// 	if (e.which === 13) {
+	// 		e.preventDefault();
+	// 		$('li').append(inputValue);
+	// 		this.value = '';
+	// 	}
+	// });
 
 	function crossOut() {
 		li.toggleClass('strike');
